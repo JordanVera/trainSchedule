@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Train Schedule Generator | Created by Jordan Vera &copy;</title>
+	
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+	<!-- Links
+	_______________________ -->
+	
+	<!-- Foundation Stylesheet -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/css/foundation.min.css" integrity="sha256-GSio8qamaXapM8Fq9JYdGNTvk/dgs+cMLgPeevOYEx0= sha384-wAweiGTn38CY2DSwAaEffed6iMeflc0FMiuptanbN4J+ib+342gKGpvYRWubPd/+ sha512-QHEb6jOC8SaGTmYmGU19u2FhIfeG+t/hSacIWPpDzOp5yygnthL3JwnilM7LM1dOAbJv62R+/FICfsrKUqv4Gg==" crossorigin="anonymous">
+	 <!--Jquery CDN -->
+	<script
+				  src="https://code.jquery.com/jquery-3.3.1.min.js"
+				  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+				  crossorigin="anonymous"></script>
+	<!-- Firebase -->
+	 <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+	 <script src="scripts/moment.js"></script>
+	
+	 
+	 
+    <link rel="stylesheet" href="css/style.css">	
+</head>
+<body>
+ 
+	<div class="grid-container">
+		<div class="cell">
+			<h1 class="text-center">Check Train Listing Now!</h1>
+		</div>
+		
+		<div class="grid-x grid-margin-x">
+			<div class="cell large-8">
+				<div class="card">
+				  <div class="card-divider">
+				    <h3>Current Train Schedule:</h3>
+				  </div>
+				 	
+				  <div class="card-section">
+				  	
+				   <table class="hover stack" id="trainTable">
+				   	<thead>
+				   			<tr>
+				   				<th>Train Name</th>
+				   				<th>Destination</th>
+				   				<th>Frequency (min)</th>
+				   				<th>Next Arrival</th>
+				   				<th>Minutes Away</th>
+				   			</tr>
+				   		</thead>
+				   		<tbody id="javascriptDump">
+				   			<!-- JS dump -->
+				   		</tbody>
+				   </table>
+				  	
+				  </div><!-- Card Section -->
+				</div><!-- Card -->
+			</div><!-- Cell -->
+			
+			<div class="cell large-4">
+				<div class="card">
+				  <div class="card-divider">
+				   <h3>Add Train:</h3>
+				  </div>
+				 
+				  <div class="card-section">
+					
+				    <label>
+				      Train Name
+				      <input type="text" id="trainNameInput">
+				    </label>
+					
+					<label>
+					  Destination
+					  <input type="text" id="destinationInput">
+					</label>
+					
+					<label>
+					  First Train Time
+					  <input type="text" id="firstTrainInput">
+					</label>
+					
+					<label>
+					  Frequency (Min)
+					  <input type="text" id="frequencyInput">
+					</label>
+					
+					<button type="submit" class="button" id="addTrainButton"> Submit</button>
+				  </div><!-- Card Section -->
+				</div><!-- Card -->
+			</div><!-- Cell -->
+		
+		</div><!-- Grid-x -->
+		
+		
+	<div class="grid-x">
+		
+	</div><!-- Grid-x -->
+		
+		
+		
+	</div><!-- GRID_CONTAINER -->
+ 
+	
+	<!-- External JS Link -->
+ <script src="scripts/logic.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
